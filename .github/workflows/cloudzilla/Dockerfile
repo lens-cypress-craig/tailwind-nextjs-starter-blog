@@ -15,7 +15,7 @@ RUN yarn install
 
 # add app to container and attempt build
 COPY . ./
-RUN yarn build
+RUN $ EXPORT&#x3D;1 UNOPTIMIZED&#x3D;1 BASE_PATH&#x3D;&#x2F;myblog yarn build
 
 # the start command needs to be triple curly braces to avoid escaping special characters
-CMD ["yarn", "start"]
+CMD ["yarn", "dev"]
